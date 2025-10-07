@@ -77,7 +77,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 8px auto;
   display: block;
   width: 130px;
+  height: 130px;
   border: 5px solid #2c2f3f;
+  object-fit: cover;
+  object-position: center;
 }
 #header .profile h1 {
   font-size: 22px;
