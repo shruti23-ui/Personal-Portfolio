@@ -74,13 +74,13 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
 }
 #header .profile img {
-  margin: 15px auto;
+  margin: 10px auto;
   display: block;
-  width: 200px;
-  border: 8px solid #2c2f3f;
+  width: 150px;
+  border: 6px solid #2c2f3f;
 }
 #header .profile h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -93,17 +93,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   background: #212431;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 6px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
@@ -154,8 +154,29 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 15px 0 20px 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px);
 }
+
+/* Custom scrollbar for navigation */
+.nav-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nav-menu::-webkit-scrollbar-track {
+  background: #1a1f2e;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+  background: #149ddd;
+  border-radius: 3px;
+}
+
+.nav-menu::-webkit-scrollbar-thumb:hover {
+  background: #37b3ed;
+}
+
 .nav-menu * {
   margin: 0;
   padding: 0;
@@ -169,10 +190,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  padding: 10px 15px;
+  margin-bottom: 6px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 14px;
 }
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
